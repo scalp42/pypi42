@@ -27,10 +27,11 @@ setup(
     packages=find_packages(exclude=['ez_setup', 'tests']),
     include_package_data=True,
     zip_safe=False,
-    entry_points = {
+    entry_points={
         'console_scripts': [
             'pypi42 = pypi42.main:pypi42',
         ],
+    },
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Environment :: Console',
