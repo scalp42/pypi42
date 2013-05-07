@@ -9,6 +9,7 @@ def pypi42():
     print "HELLO WORLD 42"
     savedpath = os.getcwd()
     fabpath = get_python_lib() + '/pypi42'
-    os.chdir(fabpath)
+    #os.chdir(fabpath)
+    state.env.fabfile = fabpath
     main()
-    os.chdir(savedpath)
+    #os.chdir(savedpath)
