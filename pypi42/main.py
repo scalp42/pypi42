@@ -1,16 +1,22 @@
 import os
 
 
-def pypi42():
+def pypi42_dirty():
     from fabric.main import main
-    from fabric import state
     from distutils.sysconfig import get_python_lib
 
-    print "HELLO WORLD 42"
     savedpath = os.getcwd()
     fabpath = get_python_lib() + '/pypi42/'
-    #os.chdir(fabpath)
+    os.chdir(fabpath)
+    main()
+    os.chdir(savedpath)
+
+
+def pypi42_clean():
+    from fabric.main import main
+    from distutils.sysconfig import get_python_lib
+
+    fabpath = get_python_lib() + '/pypi42/'
     fabfile = fabpath + 'fabfile.py'
     fabfile = [fabfile]
     main(fabfile)
-    #os.chdir(savedpath)

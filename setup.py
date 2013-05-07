@@ -30,7 +30,7 @@ setup(
     zip_safe=False,
     entry_points={
         'console_scripts': [
-            'pypi42 = pypi42.main:pypi42',
+            'pypi42 = pypi42.main:pypi42_clean',
         ],
     },
     classifiers=[
