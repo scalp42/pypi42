@@ -14,7 +14,7 @@ def read(filename):
 
 setup(
     name='pypi42',
-    version='0.1',
+    version=version,
     description='Package testing',
     long_description=read('README.txt'),
     author='Anthony Scalisi',
