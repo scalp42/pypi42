@@ -10,6 +10,6 @@ def pypi42():
     savedpath = os.getcwd()
     fabpath = get_python_lib() + '/pypi42'
     #os.chdir(fabpath)
-    #fabfile = fabpath + 'fabfile.py'
-    main(fabpath)
+    fabfile = fabpath + 'fabfile.py'
+    main(fabfile)
     #os.chdir(savedpath)
