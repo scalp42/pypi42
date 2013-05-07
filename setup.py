@@ -1,4 +1,5 @@
 import os
+from pypi42 import version
 
 try:
     from setuptools import setup, find_packages
